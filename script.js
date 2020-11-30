@@ -28,7 +28,7 @@ async function getMovie(id) {
         return await $.ajax({
             url: `${BASEURLAPI}/movie/${id}`,
             data: {
-                APIKEY: APIKEY,
+                api_key: APIKEY,
                 language: 'pt-Br'
             }
         });
@@ -42,7 +42,7 @@ async function searchMovies(search) {
         return await $.ajax({
             url: `${BASEURLAPI}/search/movie`,
             data: {
-                APIKEY: APIKEY,
+                api_key: APIKEY,
                 query: search,
                 language: 'pt-Br'
             }
