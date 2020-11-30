@@ -13,7 +13,7 @@ async function getNowPlaying(page) {
         return await $.ajax({
             url: `${BASEURLAPI}/movie/now_playing`,
             data: {
-                APIKEY: APIKEY,
+                api_key: APIKEY,
                 page: page,
                 language: 'pt-Br'
             }
